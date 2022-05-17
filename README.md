@@ -1,31 +1,26 @@
 
-Deep 1D-Convnet for accurate Parkinson disease detection and severity prediction from gait
+# Deep 1D-Convnet for accurate Parkinson disease detection and severity prediction from gait
 
-Prerequisites
--
+## Prerequisites
+
 - Python 3.7 
 - CPU or  NVIDIA GPU + CUDA CuDNN 
-- Install the prerequisite's libraries: pip install -r requirements.txt
+- Install the prerequisite's libraries with ```pip install -r requirements.txt```
 
-Dataset
-- 
-The dataset  used in the paper is from Physionet. It can be downloaded from: 
-https://physionet.org/content/gaitpdb/1.0.0
- 
- A sample of the dataset is available in the subfolder data. 
+## Dataset
 
-Getting Started 
--
-The entry point is train.py file. It has 3 arguments: 
+The dataset used in the paper is from Physionet. It can be downloaded from (1). A sample of the dataset is available in the subfolder data. 
+
+## Getting Started
+
+The entry point is ```train.py``` file. It has 3 arguments: 
   - input_data: Input folder containing the dataset. 
   - exp_name: type of experiment to run: 
       - 'train_classifier': Run the cross-validation experiment for Parkinson detection. 
       - 'train_severity': Run the cross-validation experiment for Parkinson severity prediction using the UPDRS scale.
       - 'ablation': Ablation study for the different gait signals for Parkinson detection. 
-  
-  Once executed, the algorithm will generate the following output files:
- 
- ------------
+
+Once executed, the algorithm will generate the following output files:
 
     ├── output (dir)
         ├── exp_name_Day_Month (when the program is launched) 
@@ -38,6 +33,9 @@ The entry point is train.py file. It has 3 arguments:
                 ├──  gt.csv: and pred.csv  ( for severity prediction) ground truth level and prediction level for each patient.
                 ├──  confusion_matrix.csv: Confusion matrix for severity prediction
     
+## References
+
+(1) https://physionet.org/content/gaitpdb/1.0.0
     
     
                 
