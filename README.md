@@ -1,10 +1,5 @@
 
 Deep 1D-Convnet for accurate Parkinson disease detection and severity prediction from gait
--
-
-This is the official code release for the paper : 
-D. M. D. Nguyen, M. Miah, G.-A. Bilodeau, and W. Bouachir, “Transformers for 1d signals in parkinson’s disease detection from gait,” 2022.
-You can access it via arXiv: http://arxiv.org/abs/2204.00423
 
 Prerequisites
 -
