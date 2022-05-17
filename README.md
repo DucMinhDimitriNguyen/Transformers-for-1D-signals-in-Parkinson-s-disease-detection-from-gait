@@ -17,8 +17,7 @@ The entry point is ```train.py``` file. It has 3 arguments:
   - input_data: Input folder containing the dataset. 
   - exp_name: type of experiment to run: 
       - 'train_classifier': Run the cross-validation experiment for Parkinson detection. 
-      - 'train_severity': Run the cross-validation experiment for Parkinson severity prediction using the UPDRS scale.
-      - 'ablation': Ablation study for the different gait signals for Parkinson detection. 
+      - 'train_severity': Run the cross-validation experiment for Parkinson severity prediction using the UPDRS scale. 
 
 Once executed, the algorithm will generate the following output files:
 
